@@ -3,10 +3,14 @@
   src: url(../../assets/fonts/Southland.ttf);
 }
 
+:root {
+  --main-bg-color: cyan;
+}
+
 nav {
-  position: fixed;
+  position: sticky;
   width: 100%;
-  display: inline-block;
+  display: block;
   height: 100px;
   background-color: #1b1b1b;
 }
@@ -48,16 +52,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: cyan;
+  color: var(--main-bg-color);
   box-shadow: 0 0 5px #c5bfb9, 0 0 5px #c5bfb9;
-  border-radius: 18px;
+  border-radius: 22px;
 }
 
 nav ul ul {
   position: absolute;
-  /* top: 70px; */
   opacity: 0;
-  border-top: 1px solid cyan;
+  border-top: 1px solid var(--main-bg-color);
   visibility: hidden;
   transition: 0.6s;
 }
@@ -65,7 +68,7 @@ nav ul ul ul {
   border-top: none;
 }
 nav ul li:hover > ul {
-  position: -webkit-sticky;
+  position: absolute;
   top: 90px;
   opacity: 1;
   visibility: visible;
@@ -87,5 +90,52 @@ nav ul ul li a {
 
 nav ul ul li a:hover {
   box-shadow: none;
-  color: cyan;
+  color: var(--main-bg-color);
+}
+.logo2 {
+  position: sticky;
+  font-family: "Southland";
+  border-top: 3px solid var(--main-bg-color);
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.faAngleDown {
+  color: #fff;
+}
+
+.faBars {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1042px) {
+  nav {
+    /* position: sticky; */
+    width: 100%;
+    display: block;
+    height: 150px;
+    background-color: #1b1b1b;
+  }
+  nav .logo {
+    position: relative;
+    padding: 30px 60px;
+    line-height: 20px;
+    flex-wrap: wrap;
+    /* display: none;*/
+  }
+  nav ul {
+    margin-top: -30px;
+    margin-right: 0;
+    float: right;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .faBars {
+    display: block;
+    color: red;
+  }
 }

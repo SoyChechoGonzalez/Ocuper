@@ -1,40 +1,59 @@
 import React from "react";
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <React.Fragment>
+    <div>
       <nav className="navbar">
         <div className="logo">Occuper</div>
         <ul>
           <li>
-            <a href="/">Inicio</a>
+            <a href="/">Interiorismo</a>
+          </li>
+          <li>
+            <a href="/">Oficinas</a>
+          </li>
+          <li>
+            <a href="/">Stands</a>
+          </li>
+          <li>
+            <a href="/">Fachadas</a>
+          </li>
+          <li>
+            <a href="/">Locales</a>
           </li>
           <li>
             <a href="/">Sobre Occuper</a>
-          </li>
-          <li>
-            <a href="/">Líneas de diseño</a>
+            <span className="faAngleDown">
+              <FontAwesomeIcon icon={faAngleDown} />
+            </span>
             <ul>
+              <div className="logo2">
+                <li>
+                  <a href="/" className="logo2">
+                    Occuper
+                  </a>
+                </li>
+              </div>
               <li>
-                <li>
-                  <a href="/">Comercial</a>
-                </li>
-                <li>
-                  <a href="/">Interiorismo</a>
-                </li>
-                <li>
-                  <a href="/">Stand</a>
-                </li>
+                <a href="/">Metodología</a>
+              </li>
+              <li>
+                <a href="/">Diseñadora</a>
+              </li>
+              <li>
+                <a href="/">Contacto</a>
               </li>
             </ul>
           </li>
-          <li>
-            <a href="/">Contacto</a>
-          </li>
+          <span className="faBars">
+            <FontAwesomeIcon icon={faBars} />
+          </span>
         </ul>
       </nav>
-    </React.Fragment>
+    </div>
   );
 };
 
