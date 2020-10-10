@@ -11,7 +11,7 @@ nav {
   position: sticky;
   width: 100%;
   display: block;
-  height: 100px;
+  height: 6rem;
   background-color: #1b1b1b;
 }
 nav:after {
@@ -19,7 +19,7 @@ nav:after {
   clear: both;
   display: table;
 }
-nav .logo {
+.logo {
   position: absolute;
   color: #fff;
   font-family: "Southland";
@@ -35,7 +35,6 @@ nav ul {
   list-style: none;
   top: 15px;
   margin-right: 60px;
-  /* text-align: left; */
 }
 nav ul li {
   display: inline-block;
@@ -47,8 +46,8 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   line-height: 70px;
-  font-size: 22px;
-  padding: 8px 15px;
+  font-size: 1.5rem;
+  padding: 8px 16px;
 }
 
 nav ul li a:hover {
@@ -60,13 +59,13 @@ nav ul li a:hover {
 nav ul ul {
   position: absolute;
   opacity: 0;
-  border-top: 1px solid var(--main-bg-color);
+  /* border-top: 1px solid var(--main-bg-color); */
   visibility: hidden;
   transition: 0.6s;
 }
-nav ul ul ul {
+/* nav ul ul ul {
   border-top: none;
-}
+} */
 nav ul li:hover > ul {
   position: absolute;
   top: 90px;
@@ -90,52 +89,103 @@ nav ul ul li a {
 
 nav ul ul li a:hover {
   box-shadow: none;
-  color: var(--main-bg-color);
+  /* color: var(--main-bg-color); */
 }
 .logo2 {
-  position: sticky;
+  /* position: sticky; */
   font-family: "Southland";
-  border-top: 3px solid var(--main-bg-color);
+  border-top: 4px solid var(--main-bg-color); /*Efecto azul curvo*/
   font-size: 60px;
   line-height: 70px;
 }
 
+.logo2:hover {
+  position: sticky;
+  font-family: "Southland";
+  border-top: 4px solid var(--main-bg-color); /*Efecto azul curvo*/
+  font-size: 60px;
+  line-height: 70px;
+}
 .faAngleDown {
   color: #fff;
+  margin-left: -0.6rem;
 }
-
 .faBars {
-  display: none;
+  visibility: hidden;
 }
 
-@media (min-width: 768px) and (max-width: 1042px) {
+@media screen and (max-width: 1100px) {
   nav {
-    /* position: sticky; */
-    width: 100%;
-    display: block;
-    height: 150px;
-    background-color: #1b1b1b;
+    clear: both;
+    float: left;
+    /* overflow: hidden; */
+    /* max-width: 100%; */
   }
-  nav .logo {
+
+  nav ul {
+    float: left;
+    left: 50%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
     position: relative;
-    padding: 30px 60px;
-    line-height: 20px;
-    flex-wrap: wrap;
-    /* display: none;*/
+  }
+
+  nav ul li {
+    float: left;
+    position: relative;
+    right: 50%;
+  }
+  /* nav {
+    clear: both;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+  }
+  .logo {
+    top: 0;
+    padding: 0.5rem 2rem;
+    height: 0;
   }
   nav ul {
-    margin-top: -30px;
-    margin-right: 0;
-    float: right;
+    top: 0;
   }
+  nav ul li {
+    margin: auto 15px;
+  }
+
+  nav ul ul {
+    display: block;
+  }
+  nav ul li a {
+    padding: 8px 9px;
+    font-size: 1.5rem;
+  } */
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  nav {
+    position: sticky;
+    width: 100%;
+    display: block;
+    height: auto;
+    background-color: #1b1b1b;
+  }
+} */
+
+@media (min-width: 500px) and (max-width: 767px) {
   nav ul {
     display: none;
   }
   .faBars {
     display: block;
     color: red;
+    visibility: visible;
   }
+  /* .logo {
+    padding-left: 15px;
+  } */
 }

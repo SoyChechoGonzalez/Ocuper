@@ -26,8 +26,8 @@ const Header = () => {
           </li>
           <li>
             <a href="/">Sobre Occuper</a>
-            <span className="faAngleDown">
-              <FontAwesomeIcon icon={faAngleDown} />
+            <span>
+              <FontAwesomeIcon className={"faAngleDown"} icon={faAngleDown} />
             </span>
             <ul>
               <div className="logo2">
@@ -48,10 +48,10 @@ const Header = () => {
               </li>
             </ul>
           </li>
-          <span className="faBars">
-            <FontAwesomeIcon icon={faBars} />
-          </span>
         </ul>
+        <span>
+          <FontAwesomeIcon className={"faBars"} icon={faBars} />
+        </span>
       </nav>
     </div>
   );
