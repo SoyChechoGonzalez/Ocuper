@@ -25,18 +25,17 @@ const Header = () => {
             <a href="/">Locales</a>
           </li>
           <li>
+            <div></div>
             <a href="/">Sobre Occuper</a>
             <span>
               <FontAwesomeIcon className={"faAngleDown"} icon={faAngleDown} />
             </span>
             <ul>
-              <div className="logo2">
-                <li>
-                  <a href="/" className="logo2">
-                    Occuper
-                  </a>
-                </li>
-              </div>
+              <li>
+                <a href="/" className="logo2">
+                  Occuper
+                </a>
+              </li>
               <li>
                 <a href="/">Metodología</a>
               </li>
