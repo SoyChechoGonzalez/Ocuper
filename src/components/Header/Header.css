@@ -78,7 +78,7 @@ nav ul ul li {
   text-align: center;
   display: list-item;
   border-bottom: 0.1rem solid #fff;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
   background-color: rgb(27, 27, 27);
 }
 
@@ -92,7 +92,7 @@ nav ul ul li a:hover {
 }
 .logo2 {
   font-family: "Southland";
-  font-size: 4.5rem;
+  font-size: 4rem;
   line-height: 90px;
 }
 .logo2:hover {
