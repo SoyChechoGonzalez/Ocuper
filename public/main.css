@@ -1,0 +1,103 @@
+.navbar {
+  background: #0c0c0c;
+  padding: 3.6rem 3rem 3.6rem 3.6rem;
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  z-index: 700;
+  overflow-y: auto;
+  overflow-x: hidden;
+  visibility: hidden;
+}
+
+.navbar__close {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+  background-color: rgba(245, 12, 12);
+  position: absolute;
+  top: 36px;
+  right: 30px;
+  font: 0/0 a;
+  text-shadow: none;
+  z-index: 800;
+}
+
+.navbar__close span::before,
+.navbar__close span::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 12px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  margin-top: -1px;
+}
+
+.navbar__close span::before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.navbar__close span::after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* menu is open
+ * ----------------------------------------------- */
+.menu-is-open .navbar {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## mobile menu toggle 
+ * ------------------------------------------------------------------- */
+.header-menu-toggle {
+  position: fixed;
+  right: 38px;
+  top: 24px;
+  height: 42px;
+  width: 42px;
+}
+
+.header-menu-toggle:hover,
+.header-menu-toggle:focus {
+  color: red;
+}
+
+.header-menu-text {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 3rem;
+  width: 70px;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * header
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .header-menu-toggle {
+    right: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header-menu-text {
+    display: none;
+  }
+}
