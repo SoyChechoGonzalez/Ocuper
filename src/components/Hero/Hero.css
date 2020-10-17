@@ -38,8 +38,7 @@
 }
 
 .social {
-  position: absolute;
-  /* font-size: 1.8rem; */
+  position: fixed;
   padding-left: 90%;
   z-index: 11;
 }
@@ -47,14 +46,24 @@
 .social ul {
   list-style: none;
 }
-
+.social ul li {
+  margin-top: 3rem;
+}
 .social ul li a {
   text-decoration: none;
   color: #fff;
-  background-size: 2rem;
 }
 .social ul li a:hover {
   color: var(--main-bg-color);
+}
+.FaInstagram:hover {
+  color: #c13584;
+}
+.FaFacebook:hover {
+  color: #3b5998;
+}
+.ImWhatsapp:hover {
+  color: #00e676;
 }
 
 .typewriter {
