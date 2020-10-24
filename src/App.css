@@ -3,5 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  /* background-color: #000; */
+}
+
+body {
+  background-color: #1b1b1b;
+}
+/* .App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+} */
+
+.container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  background-color: #fff;
 }

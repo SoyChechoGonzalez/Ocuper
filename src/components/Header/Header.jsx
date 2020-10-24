@@ -10,19 +10,19 @@ const Header = () => {
         <div className="logo">Occuper</div>
         <ul>
           <li>
-            <a href="/">Interiorismo</a>
+            <a href="#interiorismo">Interiorismo</a>
           </li>
           <li>
-            <a href="/">Oficinas</a>
+            <a href="#oficinas">Oficinas</a>
           </li>
           <li>
-            <a href="/">Stands</a>
+            <a href="#stands">Stands</a>
           </li>
           <li>
-            <a href="/">Fachadas</a>
+            <a href="#fachadas">Fachadas</a>
           </li>
           <li>
-            <a href="/">Locales</a>
+            <a href="#locales">Locales</a>
           </li>
           <li>
             <div></div>

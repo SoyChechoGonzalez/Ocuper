@@ -8,10 +8,12 @@
 }
 
 nav {
-  position: static;
+  display: block;
+  position: fixed;
   width: 100%;
   height: 6rem;
   background-color: #1b1b1b;
+  z-index: 111;
 }
 nav:after {
   content: "";
