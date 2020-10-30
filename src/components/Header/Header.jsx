@@ -1,51 +1,32 @@
 import React from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
     <div>
       <nav className="navbar">
-        <div className="logo">Occuper</div>
+        <logo>
+          <a href="index.html" className="logo">
+            Occuper
+          </a>
+        </logo>
         <ul>
           <li>
-            <a href="#interiorismo">Interiorismo</a>
+            <a href="#portafolio">Portafolio</a>
           </li>
           <li>
-            <a href="#oficinas">Oficinas</a>
+            <a href="#about">Sobre Occuper</a>
           </li>
           <li>
-            <a href="#stands">Stands</a>
+            <a href="#motodologia">Metodología</a>
           </li>
           <li>
-            <a href="#fachadas">Fachadas</a>
+            <a href="#diseñadora">Diseñadora</a>
           </li>
           <li>
-            <a href="#locales">Locales</a>
-          </li>
-          <li>
-            <div></div>
-            <a href="/">Sobre Occuper</a>
-            <span>
-              <FontAwesomeIcon className={"faAngleDown"} icon={faAngleDown} />
-            </span>
-            <ul>
-              <li>
-                <a href="/" className="logo2">
-                  Occuper
-                </a>
-              </li>
-              <li>
-                <a href="/">Metodología</a>
-              </li>
-              <li>
-                <a href="/">Diseñadora</a>
-              </li>
-              <li>
-                <a href="/">Contacto</a>
-              </li>
-            </ul>
+            <a href="#contacto">Contacto</a>
           </li>
         </ul>
         <span>

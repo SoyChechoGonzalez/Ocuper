@@ -1,0 +1,13 @@
+.buttons__port {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  z-index: 111;
+}
+
+.button__port {
+  padding-left: 10px;
+}

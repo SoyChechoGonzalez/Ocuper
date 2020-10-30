@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Interiorismo from "./components/Interiorismo";
+import Galeria from "./components/Galeria";
 import Oficinas from "./components/Oficinas/";
 import Stands from "./components/Stands/";
 import Fachadas from "./components/Fachadas/";
@@ -18,7 +18,7 @@ function App() {
         <Hero />
       </div>
       <div>
-        <Interiorismo />
+        <Galeria />
       </div>
       <div>
         <Oficinas />

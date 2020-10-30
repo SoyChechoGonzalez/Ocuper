@@ -16,24 +16,18 @@ const Hero = () => {
         <article className="social">
           <ul>
             <li>
-              <a
-                href="https://www.instagram.com/disenoespacios.luisab/"
-                className="FaInstagram"
-              >
-                <FaInstagram size="3rem" className="FaInstagram" />
+              <a href="https://www.instagram.com/disenoespacios.luisab/">
+                <FaInstagram size="2rem" className="FaInstagram" />
               </a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/disenoespacios.luisab/"
-                className="FaFacebook"
-              >
-                <FaFacebook size="3rem" className="FaFacebook" />
+              <a href="https://www.instagram.com/disenoespacios.luisab/">
+                <FaFacebook size="2rem" className="FaFacebook" />
               </a>
             </li>
             <li>
               <a href="https://wa.me/573184489345?text=Buenas%20tardes,%20me%20interesa%20el%20servicio%20que%20ofreces%20">
-                <ImWhatsapp size="3rem" className="ImWhatsapp" />
+                <ImWhatsapp size="2rem" className="ImWhatsapp" />
               </a>
             </li>
           </ul>
