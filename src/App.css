@@ -19,7 +19,12 @@ body {
 .container {
   width: 80%;
   height: 100vh;
-  display: flex;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: aqua;
+}
+
+@media (min-width: 368px) {
+  .container {
+    height: auto;
+  }
 }

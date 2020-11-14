@@ -37,51 +37,6 @@
   font-family: "MinionVariableConcept-Italic";
 }
 
-.social {
-  position: fixed;
-  padding-left: 90%;
-  z-index: 11;
-  display: flex;
-  flex-direction: column;
-  right: 40px;
-}
-
-.social ul {
-  list-style: none;
-}
-.social ul li {
-  margin-top: 3rem;
-}
-.social ul li a {
-  position: relative;
-  text-decoration: none;
-  color: #fff;
-  display: grid;
-  place-items: center;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #fff;
-  margin: 10px 0 0;
-}
-.social ul li a:hover {
-  background-color: #fff;
-}
-/* .social ul li a:hover .FaInstagram.FaFacebook.ImWhatsapp {
-  background-color: #000;
-  max-width: 40px;
-  filter: invert(1);
-  mix-blend-mode: difference;
-} */
-.FaInstagram:hover {
-  color: #c13584;
-}
-.FaFacebook:hover {
-  color: #3b5998;
-}
-.ImWhatsapp:hover {
-  color: #00e676;
-}
-
 .typewriter {
   position: absolute;
   transform: translate(10rem, 0rem);
@@ -114,4 +69,41 @@
     width: 100%;
     animation: cubic-bezier(0.895, 0.03, 0.685, 0.22);
   }
+}
+
+/* Redes Sociales */
+.social {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social ul li {
+  padding: 30px;
+}
+.social ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  z-index: 1111;
+  /* vertical-align: bottom; */
+  /* color: #000; */
+  /* width: 40px;
+  height: 0px; */
+  /* border: none solid #000; */
+  /* margin: 10px 10px 10px;
+  padding: 3px; */
+}
+
+.social ul li a:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
 }
