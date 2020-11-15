@@ -17,17 +17,17 @@ const Hero = () => {
           <ul>
             <li>
               <a href="https://www.instagram.com/disenoespacios.luisab/">
-                <FaInstagram size="2rem" className="FaInstagram" />
+                <FaInstagram size="2.5rem" className="FaInstagram" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/disenoespacios.luisab/">
-                <FaFacebook size="2rem" className="FaFacebook" />
+                <FaFacebook size="2.5rem" className="FaFacebook" />
               </a>
             </li>
             <li>
               <a href="https://wa.me/573184489345?text=Buenas%20tardes,%20me%20interesa%20el%20servicio%20que%20ofreces%20">
-                <ImWhatsapp size="2rem" className="ImWhatsapp" />
+                <ImWhatsapp size="2.5rem" className="ImWhatsapp" />
               </a>
             </li>
           </ul>

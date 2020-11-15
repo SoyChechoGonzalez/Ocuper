@@ -16,9 +16,6 @@ const Navbar = () => {
         </logo>
         <ul>
           <li>
-            <a href="#otros">otros</a>
-          </li>
-          <li>
             <a href="#interiorismo">interiorismo</a>
           </li>
           <li>
@@ -34,6 +31,9 @@ const Navbar = () => {
             <a href="#locales">locales</a>
           </li>
           <li>
+            <a href="#otros">otros</a>
+          </li>
+          <li>
             <a href="#about" className="dropdown">
               sobre occuper
             </a>
@@ -47,10 +47,10 @@ const Navbar = () => {
                 <a href="/">metodologia</a>
               </li> */}
               <li>
-                <a href="/">diseñadora</a>
+                <a href="#designer">diseñadora</a>
               </li>
               <li>
-                <a href="/">contacto</a>
+                <a href="#contact">contacto</a>
               </li>
             </ul>
           </li>

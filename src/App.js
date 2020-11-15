@@ -6,6 +6,7 @@ import Interiorismo from "./components/Interiorismo/";
 import Stands from "./components/Stands/";
 import Fachadas from "./components/Fachadas/";
 import Locales from "./components/Locales/";
+import Designer from "./components/Designer";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div>
         <Interiorismo />
+      </div>
+      <div>
+        <Designer />
       </div>
       <div>
         <Stands />

@@ -6,17 +6,19 @@
   font-family: "MinionVariableConcept-Italic";
   src: url(../../assets/fonts/MinionVariableConcept-Italic.otf);
 }
+/* Utilizamos la imagen como fondo */
 .hero {
   background-image: url(../../assets/img/fachada.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* position: absolute; */
   width: 100%;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
+/* Opacamos el fondo */
 .hero:after {
   content: "Hello";
   position: absolute;
@@ -27,16 +29,32 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+/* Texto encima de la imagen */
 .hero__content {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 11;
+  flex-direction: column;
 }
 .hero__content h1 {
-  filter: invert(#fff);
+  /* filter: invert(#fff); */
+  position: relative;
+  /* bottom: 30px; */
   color: #fff;
   font-size: 7rem;
+  justify-content: center;
   font-family: "MinionVariableConcept-Italic";
 }
 
+.hero__content h2 {
+  position: relative;
+  right: 10%;
+}
+/* Le damos efecto como si estuviese escribiendo */
 .typewriter {
   position: absolute;
   transform: translate(10rem, 0rem);
@@ -73,7 +91,7 @@
 
 /* Redes Sociales */
 .social {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -102,8 +120,8 @@
   padding: 3px; */
 }
 
-.social ul li a:hover {
+/* .social ul li a:hover {
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
-}
+} */

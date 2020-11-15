@@ -1,0 +1,47 @@
+.designer {
+  background-color: #040404;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -1111;
+}
+.paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+}
+.paragraph h1 {
+  color: #fff;
+  position: relative;
+  font-size: 4rem;
+  z-index: 1;
+  bottom: 200px;
+  right: 5%;
+}
+.paragraph p {
+  position: absolute;
+  font-size: 1.7rem;
+  width: 50%;
+  left: 5%;
+  color: #fff;
+  margin-top: 100px;
+  text-align: justify;
+}
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  right: 10%;
+  /* margin-top: -20%; */
+}
