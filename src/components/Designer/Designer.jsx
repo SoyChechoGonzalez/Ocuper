@@ -6,7 +6,7 @@ const Designer = () => {
   return (
     <React.Fragment>
       <div>
-        <section action="" id="designer" className="designer red">
+        <section className="designer">
           <article className="paragraph">
             <h1>Luisa Maria Betancur</h1>
             <p>

@@ -8,18 +8,17 @@
 body {
   background-color: #fff;
 }
-/* .App {
+.App {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
-} */
+}
 
 .container {
+  position: absolute;
   width: 80%;
   height: 100vh;
-  margin: 0 auto;
+  top: 3rem;
+  /* margin: 0 auto; */
   background-color: aqua;
 }
 

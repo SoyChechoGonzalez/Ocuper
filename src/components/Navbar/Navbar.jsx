@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -7,50 +8,51 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <div>
+    <header>
+      <Link to="/" className="logo" exact>
+        Occuper
+      </Link>
       <nav className="navbar">
-        <logo>
-          <a href="index.html" className="logo">
-            Occuper
-          </a>
-        </logo>
         <ul>
           <li>
-            <a href="#interiorismo">interiorismo</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#oficinas">oficinas</a>
+            <Link to="/interiorismo">interiorismo</Link>
           </li>
           <li>
-            <a href="#stands">stands</a>
+            <Link to="/oficinas">oficinas</Link>
           </li>
           <li>
-            <a href="#fachadas">fachadas</a>
+            <Link to="/stands">stands</Link>
           </li>
           <li>
-            <a href="#locales">locales</a>
+            <Link to="/fachadas">fachadas</Link>
           </li>
           <li>
-            <a href="#otros">otros</a>
+            <Link to="/locales">locales</Link>
           </li>
           <li>
-            <a href="#about" className="dropdown">
+            <Link to="/otros">otros</Link>
+          </li>
+          <li>
+            <span to="/about" className="dropdown">
               sobre occuper
-            </a>
+            </span>
             <ul>
               {/* <li>
-                <a href="/" className="logo2">
+                <Link to="/" className="logo2">
                   sobre occuper
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">metodologia</a>
+                <Link to="/">metodologia</Link>
               </li> */}
               <li>
-                <a href="#designer">diseñadora</a>
+                <Link to="/designer">diseñadora</Link>
               </li>
               <li>
-                <a href="#contact">contacto</a>
+                <Link to="#contact">contacto</Link>
               </li>
             </ul>
           </li>
@@ -78,7 +80,7 @@ const Navbar = () => {
           <FontAwesomeIcon className={"faBars"} icon={faBars} />
         </span>
       </nav>
-    </div>
+    </header>
   );
 };
 

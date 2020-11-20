@@ -10,19 +10,20 @@
 .paragraph {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   width: 100%;
   height: 100%;
 }
 .paragraph h1 {
+  position: absolute;
   color: #fff;
-  position: relative;
   font-size: 4rem;
   z-index: 1;
-  bottom: 200px;
-  right: 5%;
+  /* bottom: 200px; */
+  top: 20%;
+  left: 5%;
 }
 .paragraph p {
   position: absolute;
@@ -44,4 +45,8 @@ picture {
   height: 90%;
   right: 10%;
   /* margin-top: -20%; */
+}
+
+.App:not(.App) {
+  display: block;
 }

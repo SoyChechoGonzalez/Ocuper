@@ -1,0 +1,22 @@
+import React from "react";
+import "./interiorismo_gallery.css";
+
+const Interiorismo_Gallery = () => {
+  return (
+    <React.Fragment>
+      <section>
+        <article>
+          <h1>CASA 3/13 DOBLE NIVEL</h1>
+          <p>
+            Proyecto de diseño interior que buscaba ampliar el espacio original,
+            con dos pisos, el primero zonas comunes y el segundo habitaciones y
+            baños buscando espacios amplios y abiertos, cuenta con dos
+            habitaciones entre ellas la principal con baño y vestier.
+          </p>
+        </article>
+      </section>
+    </React.Fragment>
+  );
+};
+
+export default Interiorismo_Gallery;
