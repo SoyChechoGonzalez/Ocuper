@@ -2,7 +2,7 @@
   font-family: "Southland";
   src: url(../../assets/fonts/Southland.ttf);
 }
-/* Se define la variable para los colores principales */
+/* Se definen variables para los colores principales */
 :root {
   --primary: #1b1b1b;
 }
@@ -13,10 +13,10 @@
 /* Comienza Estilos para la barra de navegación */
 
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 3rem;
-  background-color: #1b1b1b;
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,13 +24,12 @@ header {
 }
 .logo {
   position: relative;
-  color: #fff;
+  color: var(--secondary);
   left: 20px;
   font-family: "Southland";
   font-size: 4rem;
   margin: 0;
   padding: 0;
-  color: #fff;
   text-decoration: none;
   height: 8rem;
 }
@@ -45,27 +44,29 @@ nav ul {
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--secondary);
   text-decoration: none;
   padding: 15px;
+  text-transform: capitalize;
 }
 
 nav ul li a:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 .dropdown {
-  background-color: #fff;
-  padding: 15px;
+  background-color: var(--secondary);
+  padding: 16px;
+  text-transform: capitalize;
 }
 .dropdown:after {
   content: " ▾";
-  color: #000;
+  color: var(--primary);
 }
 
 .dropdown:hover::after {
-  color: #000;
-  background-color: #fff;
+  color: var(--primary);
+  background-color: var(--secondary);
 }
 nav ul ul {
   position: absolute;
@@ -80,14 +81,14 @@ nav ul :hover > ul {
   opacity: 1;
   position: absolute;
   top: 3rem;
-  width: 143px;
+  width: 145px;
   height: 6rem;
-  background-color: #000;
+  background-color: var(--primary);
   transition: 1s;
 }
 
 nav ul ul li {
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--secondary);
   width: 100%;
   display: flex;
   justify-content: center;
