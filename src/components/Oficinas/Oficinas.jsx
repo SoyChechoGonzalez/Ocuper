@@ -1,18 +1,24 @@
 import React from "react";
 import "./Oficinas.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import interiorismo_img from "../../assets/img/interiorismo/interiorismo_img";
 
 const Oficinas = () => {
   return (
-    <React.Fragment>
-      <section className="container azul" id="oficinas">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-          doloribus magni quaerat quod tempora, ducimus reprehenderit minus
-          illum ratione voluptatem ut quo quibusdam facere! Hic cum libero
-          architecto ullam voluptatibus.
-        </p>
+    <Router>
+      <section className="main__section oficinas">
+        <img
+          src={interiorismo_img.san_javier7}
+          alt=""
+          className="image"
+          width="100%"
+        />
+        <h1 className="title">Oficinas</h1>
+        <article className="container">
+          <div className="item"></div>
+        </article>
       </section>
-    </React.Fragment>
+    </Router>
   );
 };
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,21 +9,38 @@
 body {
   background-color: #000;
 }
-.App {
+/* Sección de main__section */
+.main__section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
-
+.main__section img {
+  position: fixed;
+  opacity: 1;
+  filter: brightness(0.5);
+  /* width: 100%;
+  height: 100vh; */
+}
+.main__section .title {
+  position: absolute;
+  top: 3rem;
+  font-size: 400%;
+  color: #fff;
+  border: 1px solid #fff;
+}
 .container {
-  position: relative;
+  position: absolute;
   width: 80%;
-  height: 2000px;
+  height: auto;
   top: 10rem;
   border: 4px solid red;
 }
 
-@media (min-width: 368px) {
+/* @media (min-width: 368px) {
   .container {
     height: auto;
   }
-}
+} */

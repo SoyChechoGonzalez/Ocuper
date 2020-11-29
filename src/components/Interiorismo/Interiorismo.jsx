@@ -10,14 +10,32 @@ const Interiorismo = () => {
     <Router>
       <section className="main__section interiorismo">
         <img
-          src={interiorismo_img.san_javier7}
+          src={interiorismo_img.san_javier1}
           alt=""
           className="image"
           width="100%"
         />
         <h1 className="title">Interiorismo</h1>
         <article className="container">
-          <div className="item"></div>
+          <div className="grid-item">
+            <div className="item">
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+              <div className="sub-item imagen"></div>
+            </div>
+            <div className="item">Item2</div>
+            <div className="item">Item3</div>
+            <div className="item">Item4</div>
+            <div className="item">Item5</div>
+            <div className="item">Item6</div>
+          </div>
         </article>
       </section>
     </Router>
