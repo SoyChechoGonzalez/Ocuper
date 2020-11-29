@@ -1,19 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap");
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .info h1 {
-  font-size: 40px;
-  text-align: center;
+  font-size: 4rem;
+  /* text-align: center; */
   font-weight: 400;
   text-transform: uppercase;
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  font-family: "EB Garamond", serif;
+  color: #fff;
 }
 .info p {
   font-size: 30px;
+  width: 70%;
+  /* margin: 0 auto; */
+  color: #fff;
 }
-
+.info h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 50px;
+}
 .info .linea {
-  width: 100%;
+  /* position: absolute; */
+  width: 50%;
   height: 5px;
   background-color: #fff;
   display: block;
+  /* margin: 50px auto; */
 }
 
 .grid__gallery {
@@ -29,7 +49,7 @@
   display: block;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 20px rgb(255, 33, 33);
+  box-shadow: 0 0 6px rgb(255, 255, 255);
 }
 .grid__gallery img {
   width: 100%;
@@ -66,13 +86,13 @@
 .lightbox:target {
   transform: scale(1);
 }
-.AiOutlineArrowRight,
-.AiOutlineArrowLeft {
+.IoIosArrowForward,
+.IoIosArrowBack {
   display: block;
   background-color: #000;
   color: #fff;
-  height: 30px;
-  width: 30px;
+  /* height: 30px;
+  width: 30px; */
   text-decoration: none;
 }
 .AiOutlineClose {

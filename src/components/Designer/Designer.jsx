@@ -1,6 +1,6 @@
 import React from "react";
 import "./Designer.css";
-import images from "../../assets/images";
+import interiorismo_img from "../../assets/img/designer/designer_img";
 
 const Designer = () => {
   return (
@@ -24,7 +24,7 @@ const Designer = () => {
           <article>
             <picture>
               <img
-                src={images[2]}
+                src={interiorismo_img.designer}
                 alt="Foto Luisa Betancur"
                 size=""
                 className="img"

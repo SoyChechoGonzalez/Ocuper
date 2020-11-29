@@ -8,7 +8,7 @@ const Hero = () => {
     <React.Fragment>
       <section className="hero">
         <article className="hero__content">
-          <h1>Diseño & Espacio</h1>
+          <h1>Diseño de Espacios</h1>
           <h2 className="typewriter" dataText="By. Luisa Betancur">
             By. Luisa Betancur
           </h2>

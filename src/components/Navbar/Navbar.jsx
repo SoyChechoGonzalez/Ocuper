@@ -1,21 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars } from "@fortawesome/free-solid-svg-icons";
 // import { FaInstagram, FaFacebook } from "react-icons/fa";
 // import { ImWhatsapp } from "react-icons/im";
+import images from "../../assets/img/images.jsx";
 
 const Navbar = () => {
   return (
     <header>
-      <Link to="/" className="logo" exact>
-        Occuper
+      <Link to="/" exact>
+        <img src={images.imagen1} alt="" className="logo" />
       </Link>
-      <nav className="navbar">
+      <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">home</Link>
           </li>
           <li>
             <Link to="/interiorismo">interiorismo</Link>
@@ -76,9 +77,6 @@ const Navbar = () => {
             </li>
           </ul>
         </article> */}
-        <span>
-          <FontAwesomeIcon className={"faBars"} icon={faBars} />
-        </span>
       </nav>
     </header>
   );

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #000;
 }
 .App {
   display: flex;
@@ -19,7 +19,7 @@ body {
   height: 100vh;
   top: 3rem;
   /* margin: 0 auto; */
-  background-color: aqua;
+  background-color: #000;
 }
 
 @media (min-width: 368px) {
