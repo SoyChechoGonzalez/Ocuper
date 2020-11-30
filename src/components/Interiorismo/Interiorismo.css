@@ -4,9 +4,9 @@
   grid-template-rows: 70vh 70vh 70vh;
   grid-gap: 20px 20px;
 }
-.item {
-  border: 2px solid;
-}
+/* .item {
+  border: 2px solid #000;
+} */
 
 .item:nth-of-type(1) {
   grid-column-start: 1;
@@ -15,9 +15,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4px;
 }
-.item:nth-of-type(1) .sub-item {
+/* .item:nth-of-type(1) .sub-item {
   border: 1px solid green;
-}
+} */
 
 .item:nth-of-type(1) .sub-item:nth-of-type(1) {
   grid-row-start: 1;
@@ -32,11 +32,27 @@
 .item:nth-of-type(4) {
   grid-column-start: 2;
   grid-column-end: 4;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 4px;
+}
+/* .item:nth-of-type(4) .sub-item {
+  border: 1px solid green;
+} */
+.item:nth-of-type(4) .sub-item:nth-of-type(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 .item:nth-of-type(5) {
   grid-column-start: 1;
   grid-column-end: 3;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 4px;
 }
+/* .item:nth-of-type(5) .sub-item {
+  border: 1px solid green;
+} */
 .imagen {
   background-size: cover;
   opacity: 1;
@@ -76,4 +92,41 @@
 }
 .item:nth-of-type(1) .imagen:nth-of-type(10) {
   background-image: url(../../assets/img/interiorismo/san_javier/san_javier7.jpg);
+}
+.item:nth-of-type(4) .imagen:nth-of-type(1) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier1.jpg);
+}
+.item:nth-of-type(4) .imagen:nth-of-type(2) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier2.jpg);
+}
+.item:nth-of-type(4) .imagen:nth-of-type(3) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier3.jpg);
+}
+
+.item:nth-of-type(5) .imagen:nth-of-type(1) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier1.jpg);
+}
+.item:nth-of-type(5) .imagen:nth-of-type(2) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier2.jpg);
+}
+.item:nth-of-type(5) .imagen:nth-of-type(3) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier3.jpg);
+}
+.item:nth-of-type(5) .imagen:nth-of-type(4) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier4.jpg);
+}
+.item:nth-of-type(5) .imagen:nth-of-type(5) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier5.jpg);
+}
+.item:nth-of-type(5) .imagen:nth-of-type(6) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier6.jpg);
+}
+.item:nth-of-type(5) .imagen:nth-of-type(7) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier7.jpg);
+}
+.item:nth-of-type(5) .imagen:nth-of-type(8) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier2.jpg);
+}
+.item:nth-of-type(5) .imagen:nth-of-type(9) {
+  background-image: url(../../assets/img/interiorismo/san_javier/san_javier1.jpg);
 }
